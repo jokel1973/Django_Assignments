@@ -36,7 +36,7 @@ def balance(request, pk):
     table_contents = {} # Create a dictionary into which transaction information will be placed
     for t in transactions: # Loop through transactions and determine which is a deposit or withdrawal
         if t.type == 'Deposit':
-            current_total +=t.amount # if deposit add amount to balance
+            current_total += t.amount # if deposit add amount to balance
             table_contents.update({t: current_total}) # If deposit add amount to balance
         else:
             current_total -= t.amount # if withdrawal subtract amount from balance

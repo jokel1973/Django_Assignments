@@ -15,7 +15,7 @@ class Account(models.Model):
 
 
 # Choices for a transaction
-TransactionTypes = [('Depoosit', 'Depoosit'), ('Withdrawal', 'Withdrawal')]
+TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
 
 
 # Create the Transaction Model
